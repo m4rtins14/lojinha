@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="logotipo" src="logo.png" alt="">
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Ous: 
+                    <br>seu 
+                    <br>estilo
+                    <br> do 
+                    <br>seu
+                    <br> jeito<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button><id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img id="carrinho-tamanho" src="carrinho1.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis1.png" alt="tenis 1">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS orange</h3>
+                            <p>R$369,99</p>
+                            <button onclick="addCarrinho('Tenis OUS orange', 369.99)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis2.png" alt="tenis 2">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS TAI DAI</h3>
+                            <p>R$ 399,69</p>
+                            <button onclick="addCarrinho('Tenis OUS TAI DAI', 399.69)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis3.png" alt="tenis 3">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS PHIBO </h3>
+                            <p>R$ 589,90</p>
+                            <button onclick="addCarrinho('Tenis OUS PHIBO', 589.90)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis4.png" alt="tenis 4">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS tradição</h3>
+                            <p>R$ 299,90</p>
+                            <button onclick="addCarrinho('Tenis OUS tradição', 299.90)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis5.png" alt="tenis 5">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS off white</h3>
+                            <p>R$ 499,90</p>
+                            <button onclick="addCarrinho('Tenis OUS off white', 499.90)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="tenis6.png" alt="tenis 6">
+                        </div>
+                        <div class="infos">
+                            <h3>Tenis OUS creme</h3>
+                            <p>R$ 390,00</p>
+                            <button onclick="addCarrinho('Tenis OUS creme', 390.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

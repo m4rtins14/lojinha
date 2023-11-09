@@ -1,0 +1,294 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilos para o logotipo e nome */
+.logo {
+    background-color: #333; /* Defina o fundo cinza */
+    padding: 10px; /* Adicione preenchimento para criar espaço ao redor do logotipo */
+    position: relative;
+}
+
+.logo-nome {
+    font-size: 20px; /* Ajuste o tamanho da fonte do nome do logotipo conforme necessário */
+    margin: 10px 0;
+    position: absolute;
+    top: 2px; /* Ajuste a distância superior conforme necessário */
+    left: 5px; /* Ajuste a distância esquerda conforme necessário */
+}
+
+/* Ajuste o tamanho da imagem do logotipo */
+#logotipo {
+    height: 60px; /* Ajuste a altura do logotipo conforme necessário */
+    width: auto;
+}
+
+/* Centralize o input de pesquisa e o botão */
+#buscar {
+    text-align: center; /* Centralize o conteúdo */
+}
+
+#buscar-input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#buscar-input::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF2200;
+}
+
+/* Estilos para o carrinho */
+#carrinho-itens {
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 10px; /* Ajuste a distância superior conforme necessário */
+    right: 10px; /* Ajuste a distância à direita conforme necessário */
+    width: 250px;
+    padding: 10px;
+}
+
+#itens-lista {
+    list-style: none;
+    padding: 0;
+}
+
+#preco-total {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.limpa {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.limpa:hover {
+    background-color: #FF2200;
+}
+
+/* Estilos para os produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.infos {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF2200;
+}
+
+#carrinho-tamanho {
+    height: 30px;
+    width: auto;
+}
+
+.logo-nome {
+    font-size: 15px;
+    margin: -5px 0;
+}
+
+.produto-linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto img{
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+} 
+
+/* Ajuste o tamanho das caixas dos produtos */
+.produto {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste o tamanho das imagens dos produtos */
+.produto img {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+/* Centralize o conteúdo dentro das caixas dos produtos */
+.infos {
+    text-align: center;
+    flex: 1;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF2200;
+}
+
+/* Ajuste o tamanho das caixas dos produtos e centralize */
+.produto {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste o tamanho das imagens dos produtos e centralize */
+.produto img {
+    width: 200px;
+    height: 250px;
+    margin: 20px 0; /* Adicione espaço acima e abaixo da imagem */
+}
+
+/* Centralize o conteúdo dentro das caixas dos produtos */
+.infos {
+    text-align: center;
+    flex: 1;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF2200;
+}
+
+/* Crie espaço entre as caixas dos produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto-linha {
+    padding: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
